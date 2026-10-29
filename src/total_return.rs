@@ -8,7 +8,7 @@ use rust_decimal::Decimal;
 /// The result is floored at `-1` (total loss)
 pub fn calc_total_return(returns: &[Decimal]) -> Decimal {
     max(
-        returns.into_iter().map(|r| Decimal::ONE + *r).product::<Decimal>()
+        returns.iter().map(|r| Decimal::ONE + *r).product::<Decimal>()
             - Decimal::ONE,
         Decimal::NEGATIVE_ONE,
     )
