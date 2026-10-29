@@ -46,8 +46,7 @@ pub fn calc_ulcer_index(returns: &[Decimal]) -> Decimal {
         equity *= Decimal::ONE + *r;
         if equity > peak {
             peak = equity;
-        }
-        else {
+        } else {
             let drawdown = equity / peak - Decimal::ONE;
             sum_of_squares += drawdown * drawdown;
         }
