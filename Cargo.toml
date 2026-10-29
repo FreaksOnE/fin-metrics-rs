@@ -2,8 +2,9 @@
 name = "fin-metrics-rs"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.85"
 authors = ["FreaksOnE"]
-description = "Financial metrics"
+description = "Financial performance and drawdown metrics — total return, profit factor, Ulcer Index, and Martin ratio — computed with fixed-point decimal arithmetic."
 license = "MIT"
 repository = "https://github.com/FreaksOnE/fin-metrics-rs"
 keywords = ["finance", "trading", "quant", "ulcer-index", "martin-ratio"]
